@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  database:
+    image: postgres
+    container_name: bootcamp_cataline
+    restart: always
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'secret'
+      POSTGRES_DATABASE: 'adonis'
+    ports:
+      - '5432:5432'
